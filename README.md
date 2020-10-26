@@ -1,3 +1,83 @@
 # python-folium-test  
 
 Testing using Pythons Folium for mapping
+
+## Map Example
+
+![Map](folium-map-example.png)
+
+## Bing Maps
+
+Using Bing Maps REST API for geocoding.  
+
+This could be useful to try for addresses that other geocoders fail at.  
+
+JSON Response:  
+
+```json
+{
+    "address": "Rivett, Australia",
+    "bbox": {
+        "northeast": [
+            -35.341453552246094,
+            149.04901123046875
+        ],
+        "southwest": [
+            -35.35385513305664,
+            149.02865600585938
+        ]
+    },
+    "city": "Canberra",
+    "confidence": 7,
+    "country": "Australia",
+    "lat": -35.347476959228516,
+    "lng": 149.0355682373047,
+    "neighborhood": "Rivett",
+    "ok": True,
+    "quality": "Neighborhood",
+    "raw": {
+        "__type": "Location:http: //schemas.microsoft.com/search/local/ws/rest/v1",
+        "bbox": [
+            -35.35385513305664,
+            149.02865600585938,
+            -35.341453552246094,
+            149.04901123046875
+        ],
+        "name": "Rivett, Australia",
+        "point": {
+            "type": "Point",
+            "coordinates": [
+                -35.347476959228516,
+                149.0355682373047
+            ]
+        },
+        "address": {
+            "adminDistrict": "ACT",
+            "countryRegion": "Australia",
+            "formattedAddress": "Rivett, Australia",
+            "locality": "Canberra",
+            "neighborhood": "Rivett"
+        },
+        "confidence": "High",
+        "entityType": "Neighborhood",
+        "geocodePoints": [
+            {
+                "type": "Point",
+                "coordinates": [
+                    -35.347476959228516,
+                    149.0355682373047
+                ],
+                "calculationMethod": "Rooftop",
+                "usageTypes": [
+                    "Display"
+                ]
+            }
+        ],
+        "matchCodes": [
+            "Good"
+        ]
+    },
+    "state": "ACT",
+    "status": "OK"
+}
+```
